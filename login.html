@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back · JobRecruit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1><i class="fas fa-key"></i> Welcome Back</h1>
+        <a href="index.html" style="padding-right: 20px; text-decoration: none; font-size: 20px">Back</a>
+        </div>
+
+        <!-- <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="jobs.html"><i class="fas fa-search"></i> Jobs</a>
+            <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+            <a href="admin.html"><i class="fas fa-crown"></i> Admin</a>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+            <a href="#" onclick="logout()"><i class="fas fa-power-off"></i> Logout</a>
+        </nav> -->
+
+        <div style="max-width: 450px; margin: 2rem auto; background: white; padding: 3rem; border-radius: 60px; box-shadow: 0 30px 50px -20px rgba(102, 126, 234, 0.3);">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <i class="fas fa-lock" style="font-size: 4rem; background: linear-gradient(145deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+            </div>
+            
+            <input id="email" placeholder="Email Address">
+            <input id="password" type="password" placeholder="Password">
+            <button onclick="login()" style="width: 100%;"><i class="fas fa-arrow-right-to-bracket"></i> Access Portal</button>
+        </div>
+
+        <footer>
+            <i class="fas fa-copyright"></i> 2026 JobRecruit · Your career starts here
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

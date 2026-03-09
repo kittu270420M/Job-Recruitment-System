@@ -1,0 +1,12 @@
+[
+{"title":"Frontend Developer","company":"Google","location":"Bangalore","salary":"18 LPA"},
+{"title":"Backend Developer","company":"Amazon","location":"Hyderabad","salary":"20 LPA"},
+{"title":"Cyber Security Analyst","company":"Cisco","location":"Pune","salary":"16 LPA"},
+{"title":"AI Engineer","company":"OpenAI","location":"Remote","salary":"25 LPA"},
+{"title":"Data Scientist","company":"Microsoft","location":"Bangalore","salary":"22 LPA"},
+{"title":"DevOps Engineer","company":"IBM","location":"Chennai","salary":"19 LPA"},
+{"title":"Machine Learning Engineer","company":"Nvidia","location":"Remote","salary":"28 LPA"},
+{"title":"Cloud Engineer","company":"Oracle","location":"Delhi","salary":"21 LPA"},
+{"title":"Full Stack Developer","company":"Netflix","location":"Mumbai","salary":"24 LPA"},
+{"title":"Blockchain Developer","company":"Coinbase","location":"Remote","salary":"30 LPA"}
+]

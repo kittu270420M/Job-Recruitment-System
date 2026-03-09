@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard · JobRecruit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1><i class="fas fa-chart-line"></i> Recruiter Dashboard</h1>
+
+        <nav>
+            <!-- <a href="index.html"><i class="fas fa-home"></i> Home</a> -->
+            <a href="jobs.html"><i class="fas fa-search"></i> Jobs</a>
+            <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+            <!-- <a href="admin.html"><i class="fas fa-crown"></i> Admin</a>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="register.html"><i class="fas fa-user-plus"></i> Register</a> -->
+            <a href="#" onclick="logout()"><i class="fas fa-power-off"></i> Logout</a>
+        </nav>
+
+        <div style="display:flex; justify-content: space-between; align-items: center; background: linear-gradient(145deg, #667eea, #764ba2); border-radius: 48px; padding: 2rem; color: white; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <i class="fas fa-chart-pie" style="font-size: 3rem;"></i>
+                <div>
+                    <h2 style="color: white; margin: 0;">Your Posted Jobs</h2>
+                    <p style="opacity: 0.9;">Track and manage your job listings</p>
+                </div>
+            </div>
+            <a href="recruiter.html" style="margin: 0; text-decoration: none; font-size: 15px; padding: 10px 15px; background-color: white; border-radius: 10px;">Add a new Job</a>
+        </div>
+
+        <ul id="postedJobs">
+            <li><i class="fas fa-spinner fa-pulse"></i> Loading your posted jobs...</li>
+        </ul>
+
+        <footer>
+            <i class="fas fa-copyright"></i> 2026 JobRecruit · Manage your recruitment
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
