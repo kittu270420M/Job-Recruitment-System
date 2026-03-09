@@ -1,57 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobRecruit · Elite Career Portal</title>
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<title>JobPortal — Land Your Dream Career</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="app-container">
-        <h1>
-            <i class="fas fa-rocket"></i>
-            JobRecruit
-        </h1>
 
-        <nav>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <!-- <a href="jobs.html"><i class="fas fa-search"></i> Jobs</a>
-            <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
-            <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a> -->
-            <!-- <a href="admin.html"><i class="fas fa-crown"></i> Admin</a> -->
-            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
-            <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
-            <a href="#" onclick="logout()"><i class="fas fa-power-off"></i> Logout</a>
-        </nav>
+<!-- Animated Particles Effect -->
+<div class="particles">
+<div class="particle" style="--x: 10%; --y: 20%; --delay: 0s;"></div>
+<div class="particle" style="--x: 30%; --y: 60%; --delay: 2s;"></div>
+<div class="particle" style="--x: 70%; --y: 40%; --delay: 4s;"></div>
+<div class="particle" style="--x: 90%; --y: 80%; --delay: 1s;"></div>
+<div class="particle" style="--x: 50%; --y: 30%; --delay: 3s;"></div>
+<div class="particle" style="--x: 20%; --y: 90%; --delay: 5s;"></div>
+</div>
 
-        <section style="display:flex; flex-direction: column; justify-content: center; text-align: center; padding: 3rem 2rem; background: linear-gradient(145deg, #f8faff, #f0f4ff); border-radius: 60px;">
-            <i class="fas fa-bullseye" style="font-size: 5rem; background: linear-gradient(145deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem;"></i>
-            <h2 style="font-size: 3.5rem; margin: 0;display: flex; justify-content: center;">Find Your Dream Job</h2>
-            <p style="font-size: 1.4rem; color: #4a5568; max-width: 700px; margin: 1.5rem auto;">Join thousands of professionals who found their perfect role through our platform</p>
-            
-            <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 800; color: #667eea;">10k+</div>
-                    <div style="color: #4a5568;">Job Placements</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 800; color: #667eea;">500+</div>
-                    <div style="color: #4a5568;">Partner Companies</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 800; color: #667eea;">95%</div>
-                    <div style="color: #4a5568;">Success Rate</div>
-                </div>
-            </div>
-        </section>
+<header class="navbar glass">
+<div class="nav-container">
+<div class="logo-wrapper">
+<div class="logo-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<div class="logo">Job<span>Portal</span></div>
+</div>
 
-        <footer>
-            <i class="fas fa-copyright"></i> 2026 JobRecruit · Where careers take flight <i class="fas fa-heart" style="color: #667eea; margin: 0 0.5rem;"></i>
-        </footer>
-    </div>
-    <script src="app.js"></script>
-    <script src="app.js"></script>
+<nav class="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="login.html">Login</a>
+<a href="register.html" class="nav-btn">Get Started <i class="fas fa-arrow-right"></i></a>
+</nav>
+
+<div class="mobile-menu">
+<i class="fas fa-bars"></i>
+</div>
+</div>
+</header>
+
+<main>
+<!-- Hero Section with 3D Effect -->
+<section class="hero-section">
+<div class="hero-pattern"></div>
+<div class="container">
+<div class="hero-wrapper">
+<div class="hero-content">
+<div class="hero-badge">
+<span class="badge-pulse"></span>
+<span>10,000+ Jobs Available</span>
+</div>
+
+<h1 class="hero-title">
+Find Your <span class="gradient-text">Dream Job</span><br>
+<span class="hero-title-small">With Top Companies</span>
+</h1>
+
+<p class="hero-description">
+Connect with 500+ leading companies and discover opportunities that match your skills, passion, and career goals.
+</p>
+
+<div class="hero-search-container">
+<div class="hero-search-box">
+<div class="search-icon">
+<i class="fas fa-search"></i>
+</div>
+<input type="text" placeholder="Job title, keyword, or company">
+<div class="search-divider"></div>
+<div class="search-location">
+<i class="fas fa-map-marker-alt"></i>
+<select>
+<option>Anywhere</option>
+<option>Bangalore</option>
+<option>Mumbai</option>
+<option>Delhi</option>
+<option>Pune</option>
+</select>
+</div>
+</div>
+<button class="hero-search-btn">
+<span>Search Jobs</span>
+<i class="fas fa-arrow-right"></i>
+</button>
+</div>
+
+<div class="hero-stats">
+<div class="stat-item">
+<div class="stat-number">10k+</div>
+<div class="stat-label">Active Jobs</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">500+</div>
+<div class="stat-label">Companies</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">5k+</div>
+<div class="stat-label">Placements</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">24/7</div>
+<div class="stat-label">Support</div>
+</div>
+</div>
+
+<div class="hero-trusted">
+<!-- <div class="trusted-text">
+<i class="fas fa-check-circle"></i>
+<span>Trusted by professionals from</span>
+</div>
+<div class="trusted-companies">
+<div class="trusted-company"><i class="fab fa-google"></i></div>
+<div class="trusted-company"><i class="fab fa-microsoft"></i></div>
+<div class="trusted-company"><i class="fab fa-amazon"></i></div>
+<div class="trusted-company"><i class="fab fa-meta"></i></div>
+<div class="trusted-company"><i class="fab fa-netflix"></i></div>
+</div> -->
+</div>
+</div>
+
+<div class="hero-visual">
+<div class="visual-card card-1">
+<div class="card-icon"><i class="fas fa-briefcase"></i></div>
+<div class="card-content">
+<h4>Software Engineer</h4>
+<p>Google • 12 LPA</p>
+</div>
+</div>
+<div class="visual-card card-2">
+<div class="card-icon"><i class="fas fa-code"></i></div>
+<div class="card-content">
+<h4>Frontend Dev</h4>
+<p>Microsoft • 10 LPA</p>
+</div>
+</div>
+<div class="visual-card card-3">
+<div class="card-icon"><i class="fas fa-chart-line"></i></div>
+<div class="card-content">
+<h4>Data Analyst</h4>
+<p>Amazon • 8 LPA</p>
+</div>
+</div>
+<div class="visual-card card-4">
+<div class="card-icon"><i class="fas fa-cloud"></i></div>
+<div class="card-content">
+<h4>DevOps Eng</h4>
+<p>Netflix • 15 LPA</p>
+</div>
+</div>
+<div class="visual-main">
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team collaboration">
+<!-- <div class="visual-main-badge">
+<i class="fas fa-play-circle"></i>
+<span>Watch Demo</span> -->
+</div>
+</div>
+<div class="visual-shape shape-1"></div>
+<div class="visual-shape shape-2"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+<div class="container">
+<div class="section-header">
+<span class="section-subtitle">WHY CHOOSE US</span>
+<h2 class="section-title">Smart Features For <span class="gradient-text">Smart Job Seekers</span></h2>
+<p class="section-description">Everything you need to land your dream job in one place</p>
+</div>
+
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-bolt"></i>
+</div>
+<h3>Quick Apply</h3>
+<p>Apply to multiple jobs with one click using our smart apply system</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-chart-bar"></i>
+</div>
+<h3>Salary Insights</h3>
+<p>Get real-time salary data and negotiate better packages</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3>Verified Companies</h3>
+<p>All companies are verified to ensure safe and genuine opportunities</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-bell"></i>
+</div>
+<h3>Job Alerts</h3>
+<p>Get instant notifications for jobs matching your profile</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section">
+<div class="container">
+<div class="section-header">
+<span class="section-subtitle">POPULAR CATEGORIES</span>
+<h2 class="section-title">Browse Jobs By <span class="gradient-text">Category</span></h2>
+<p class="section-description">Explore opportunities in your preferred field</p>
+</div>
+
+<div class="categories-grid">
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-code"></i></div>
+<h3>Development</h3>
+<p>2,345 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-database"></i></div>
+<h3>Data Science</h3>
+<p>1,234 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-cloud"></i></div>
+<h3>DevOps</h3>
+<p>876 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+<h3>Mobile Dev</h3>
+<p>654 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-paint-brush"></i></div>
+<h3>UI/UX Design</h3>
+<p>543 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-chart-line"></i></div>
+<h3>Product Mgmt</h3>
+<p>432 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-robot"></i></div>
+<h3>AI/ML</h3>
+<p>321 jobs</p>
+</div>
+
+<div class="category-card">
+<div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Cybersecurity</h3>
+<p>234 jobs</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="container">
+<div class="cta-wrapper">
+<div class="cta-content">
+<h2>Ready to Start Your <span class="gradient-text">Career Journey?</span></h2>
+<p>Join thousands of professionals who found their dream jobs through JobPortal</p>
+<div class="cta-buttons">
+<a href="register.html" class="cta-btn-primary">Get Started Free <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="cta-stats">
+<div class="cta-stat-item">
+<div class="cta-stat-number">98%</div>
+<div class="cta-stat-label">Success Rate</div>
+</div>
+<div class="cta-stat-item">
+<div class="cta-stat-number">24h</div>
+<div class="cta-stat-label">Quick Response</div>
+</div>
+<div class="cta-stat-item">
+<div class="cta-stat-number">50k+</div>
+<div class="cta-stat-label">Happy Clients</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-bottom">
+<p>© 2026 JobPortal. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--secondary);"></i> for job seekers</p>
+</div>
+</footer>
+</main>
+
+<script>
+// Mobile menu toggle
+document.querySelector('.mobile-menu')?.addEventListener('click', function() {
+document.querySelector('.nav-menu').classList.toggle('show');
+});
+</script>
 </body>
 </html>
